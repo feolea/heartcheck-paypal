@@ -15,10 +15,8 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/feolea/heartcheck-paypal'
   spec.license       = 'MIT'
 
-  spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
-
   spec.metadata['homepage_uri'] = spec.homepage
-  spec.metadata['source_code_uri'] = 'https://github.com/feolea/heartcheck-paypal'
+  spec.metadata['source_code_uri'] = spec.homepage
   spec.metadata['changelog_uri'] = 'https://github.com/feolea/heartcheck-paypal/CHANGELOG.md'
 
   # Specify which files should be added to the gem when it is released.
