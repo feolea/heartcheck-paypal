@@ -22,7 +22,17 @@ Or install it yourself as:
 
 ## Usage
 
-You can add desired paypal accounts to monitoring.
+With this basic setup, the gem will use your app default paypal credentials:
+
+```ruby
+Heartcheck.setup do |monitor|
+  monitor.add :paypal do |config|
+    config.add_service(name: :paypal)
+  end
+end
+```
+
+Or you can add desired paypal account to monitoring if you want to use another account.
 
 ```ruby
 Heartcheck.setup do |monitor|

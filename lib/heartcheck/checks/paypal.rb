@@ -7,7 +7,7 @@ module Heartcheck
 
       def validate
         services.each do |service|
-          configure_paypal_api(service)
+          configure_paypal_api(service) if change_configs?(service)
 
           unless create_payment(service)
             @errors << @payment.error
@@ -34,6 +34,10 @@ module Heartcheck
               mode: service[:mode]
             }
           )
+      end
+
+      def change_configs?(service)
+        service[:client_id] && service[:client_secret] && service[:mode]
       end
 
       def dumb_order

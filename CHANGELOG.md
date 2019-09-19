@@ -11,3 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CHANGELOG
 - Support for multiple Paypal accounts
 - Support for different orders type
+
+## [0.1.0] - 2019-09-19
+### Added
+- Optional config paypal credentials
