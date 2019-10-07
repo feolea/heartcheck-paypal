@@ -4,6 +4,8 @@
 
 It checks the first stage(create payment) of payment's Paypal Api.
 
+[![Build Status](https://travis-ci.org/locaweb/heartcheck.svg)](https://travis-ci.org/feolea/heartcheck-paypal)
+
 ## Installation
 
 Add this line to your application's Gemfile:
